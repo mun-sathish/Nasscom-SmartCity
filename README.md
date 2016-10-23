@@ -1,9 +1,9 @@
 # Nasscom-SmartCity
 
-Team Members:
-Sathish. V - mun.sathish@gmail.com
-Utsab Dutta
-Shubham Verma
+#Team Members:
+Sathish. V - mun.sathish@gmail.com <br/>
+Utsab Dutta <br/>
+Shubham Verma <br/>
 Govardhan G H
 
 #Description
