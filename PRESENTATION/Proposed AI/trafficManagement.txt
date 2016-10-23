@@ -1,0 +1,101 @@
+int j=0,k=0,red,green,priority[24]={0},currentTime,max=0,previousTime;
+int R,L,F;//R->right,L->left,F->forwards
+void trafficManagement()
+{
+	if(time>0 && time<6)
+	basicMechanism();
+	else
+	advanceMechanism();
+}
+
+void basicMechanism()
+{
+	if(emergency)
+	emergency();
+	delay(10000);
+    green->on;
+    red->off;
+    delay(10000);
+    red->on;
+    green->off;
+}
+
+void advanceMechanism()
+{
+    
+    AI();
+    
+    if(distance-100)
+    {
+        detect(ambulance);
+        emergency();
+    }
+	if(emergency)
+	emergency();
+	else if(jam)
+	reSheduling();
+	else
+	{
+
+	}
+}
+
+void emergency()
+{
+    green-> off // for all traffic signal
+    red-> on //full restriction for others
+    passTheCar;
+    delay(10000);
+	reSheduling();
+}
+
+void resheduling()
+{
+   	
+    delay(10000);
+   	if(jam)
+	reSheduling();
+	green->on
+	red->off
+
+}
+
+void streetLightDetect()
+{
+
+    currentTime=hour;
+	if(detect)
+	{   
+	    Time=hour;
+	    car[Time]++;
+	}
+	
+	if((Time-currentTime)<0)
+	car[Time]--;
+
+    if(currentTime==23)
+	repeatedCar();
+}
+
+void repeatedCar()
+{
+    int impTime[24],noImpTime;
+    for(i=1;i<24;i++)
+    { if(car[Time]>=50)//it is been assumed that if car is more than 50 means its green signal should be more
+      impTime[j++]=Time;
+
+      if(car[Time]>=50)//it is been assumed that if car is less than 50 means its red signal should be more
+      noImpTime[k++]=Time;
+    }
+
+    j=0;k=0;
+}
+
+void AI()
+{
+	int m;
+	for(m=0;m<j;m++)
+    green->impTime[m];//more car max green light
+    for(m=0;m<k;m++)
+    red->noImpTime[m];//min car max red light
+}

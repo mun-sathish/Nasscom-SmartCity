@@ -1,0 +1,38 @@
+int j=0,priority[24]={0},currentTime,max=0,previousTime;
+
+
+//here we are considering time as 0,1,2,3,4,5,.....23 hour
+
+void streetLightDetect()
+{
+
+    currentTime=hour;
+	if(detect)
+	{   
+	    Time=hour;
+	    priority[Time]++;
+	}
+	
+	if((Time-currentTime)<0)
+	priority[Time]--;
+
+    if(currentTime==23)
+	repeatedTime();
+}
+
+void repeatedTime()
+{
+    int impTime[24];
+    for(i=1;i<24;i++)
+    { if(priority[Time]>50)//it is been assumed that if priority is more than 50 means it uses for max in that time
+      impTime[j++]=Time;
+    }  
+    j=0;
+}
+
+void AI()
+{
+	int m;
+	for(m=0;m<j;m++)
+    light->impTime[m];
+}

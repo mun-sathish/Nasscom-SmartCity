@@ -1,0 +1,10 @@
+void plant()
+{
+	
+	if(rainySeason)
+	noArtificialRain();
+	else if(summerSeason)
+	ArtificialRain();
+	else if(detectMoisture<Required)
+	ArtificialRain();
+}
