@@ -13,6 +13,9 @@ No bar on technology or year of studies.
 
 The winners of each hackathon would compete in " The Grand Finale " for Mega Prizes.
 
+Youtube URL:
+https://www.youtube.com/watch?v=8R9isnSin-w
+
 #Venue Details:
 
 SJBIT, No.67, BGS Health & Education City, Uttarahalli Main Road, Kengeri, Bengaluru, Karnataka 560060, India
