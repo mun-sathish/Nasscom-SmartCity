@@ -1,5 +1,10 @@
 # Nasscom-SmartCity
 
+Team Members:
+Sathish. V - mun.sathish@gmail.com
+Utsab Dutta
+Shubham Verma
+Govardhan G H
 
 #Description
 
